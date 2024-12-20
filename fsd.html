@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        main {
+            width: 1200px;
+            /* height: 880px; */
+            height: auto;
+            background-color: antiquewhite;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr;
+            /* grid-template-rows: 1fr 2fr 1fr; */
+            grid-template-rows: 120px 600px 80px;
+            gap: 10px;
+
+        }
+
+        #logo,
+        #section,
+        footer {
+            background-color: beige;
+
+        }
+
+        #section {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            grid-template-rows: 1fr;
+            gap: 10px;
+        }
+
+        #left,
+        #right {
+            background-color: brown;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 3fr;
+            gap: 10px;
+
+        }
+        #r_top,#r_btm{
+            background-color: thistle;
+        }
+    </style>
+</head>
+
+<body>
+
+    <main>
+
+        <div id="logo">
+            <h2>logo</h2>
+        </div>
+        <div id="section">
+            <div id="left"></div>
+            <div id="right">
+                <div id="r_top"><h2>HEADER/BANNER</h2></div>
+                <div id="r_btm"><h2>BODY AREA</h2></div>
+            </div>
+            
+        </div>
+        <footer>
+            <h2>Footer</h2>
+        </footer>
+    </main>
+</body>
+
+</html>
